@@ -1,37 +1,28 @@
 # 🏛️ The Artisan's Knowledge Base
 
-Bienvenido a mi repositorio público de documentación centralizada. Este espacio funciona como una bitácora técnica, un compendio de conocimiento y una fuente única de la verdad donde organizo guías, soluciones a problemas reales y flujos de arquitectura bajo la filosofía de **The Way of the Artisan** (El Camino del Artesano).
+*Verlo en [Español](README.es.md).*
 
-Aquí no encontrarás scripts rápidos "copiar y pegar" sin contexto; cada entrada está estructurada para entender el *porqué* de las cosas, priorizando la robustez, la seguridad y la elegancia técnica.
+Welcome to my public centralized documentation repository. This space serves as a technical logbook, a compendium of knowledge, and a single source of truth where I organize guides, solutions to real-world problems, and architectural flows under the philosophy of **The Way of the Artisan**.
 
----
-
-## 🗺️ Estructura del Repositorio
-
-El contenido está categorizado de forma lógica para facilitar una búsqueda rápida:
-
-* **`../faqs`**: Respuestas concretas a dudas recurrentes de infraestructura, herramientas y metodologías.
-* **`../tips`**: Píldoras de optimización, atajos de terminal y buenas prácticas de configuración rápida.
-* **`../tutorials`**: Guías paso a paso de principio a fin para el despliegue e integración de tecnologías.
-* **`../howtos`**: Soluciones directas a problemas específicos y casos de uso del día a día operativo.
+Here you won't find quick "copy and paste" scripts without context; each entry is structured to help you understand the *why* of things, prioritizing robustness, security, and technical elegance.
 
 ---
 
-## 🛠️ Temáticas Principales
+## 🛠️ Main Topics
 
-La documentación cubre de manera transversal el ecosistema moderno de infraestructura y desarrollo:
+The documentation transversally covers the modern infrastructure and development ecosystem:
 
-* **Cloud Native & Kubernetes:** MicroK8s, patrones de diseño de Pods, operadores (ESO), Service Mesh y RBAC.
-* **DevSecOps & SRE:** Gestión de secretos (Vault), auditoría de código/secretos (Snyk, Gitleaks), CI/CD y automatización.
-* **Infrastructure as Code (IaC):** Módulos de Terraform estandarizados y lógica modular.
-* **Backend & Architecture:** Lógica artesanal en Go (Golang), microservicios con gRPC y optimización de servicios.
-* **Linux & Home Lab:** Gestión de entornos locales (Intel NUC, tmux, k9s, redes internas) y tuning del sistema.
+* **Cloud Native & Kubernetes:** MicroK8s, Pod design patterns, operators (ESO), Service Mesh, and RBAC.
+* **DevSecOps & SRE:** Secrets management (Vault), code/secrets auditing (Snyk, Gitleaks), CI/CD, and automation.
+* **Infrastructure as Code (IaC):** Standardized Terraform modules and modular logic.
+* **Backend & Architecture:** Artisanal logic in Go (Golang), microservices with gRPC, and service optimization.
+* **Linux & Home Lab:** Management of local environments (Intel NUC, tmux, k9s, internal networks) and system tuning.
 
 ---
 
-## 🤝 Contribuciones y Feedback
+## 🤝 Contributions and Feedback
 
-Este repositorio es abierto y público. Si encuentras una errata, un comando desactualizado o crees que un flujo se puede optimizar para ser más artesanal, siéntete libre de abrir un **Issue** o enviar un **Pull Request**. La cultura DevSecOps se basa en la mejora continua compartida.
+This repository is open and public. If you find a typo, an outdated command, or believe a flow can be optimized to be more artisanal, feel free to open an **Issue** or submit a **Pull Request**. The DevSecOps culture is based on shared continuous improvement.
 
 ---
 
