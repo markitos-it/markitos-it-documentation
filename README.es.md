@@ -25,6 +25,8 @@ La documentación cubre de manera transversal el ecosistema moderno de infraestr
 
 <!-- INDEX_START -->
 * 📄 [LICENSE](./LICENSE)
+* 📄 [Makefile](./Makefile)
+* 📁 **appsec/**
 * 📁 **bash/**
   * 📁 **howtos/**
     * 📄 [localhost-development-boostrap.md](./bash/howtos/localhost-development-boostrap.md)
@@ -40,6 +42,8 @@ La documentación cubre de manera transversal el ecosistema moderno de infraestr
   * 📁 **snippets/**
     * 📄 [docker-exec-multidatabases.md](./docker/snippets/docker-exec-multidatabases.md)
 * 📁 **gcp/**
+  * 📁 **cloudbuild/**
+    * 📄 [security-pipeline.md](./gcp/cloudbuild/security-pipeline.md)
   * 📁 **iac/**
     * 📁 **terraform/**
       * 📁 **000-backend/**
@@ -73,7 +77,7 @@ La documentación cubre de manera transversal el ecosistema moderno de infraestr
   * 📁 **snippets/**
     * 📄 [kubernetes-multidatabases.md](./kubernetes/snippets/kubernetes-multidatabases.md)
     * 📄 [microk8s-external-secrets-create.md](./kubernetes/snippets/microk8s-external-secrets-create.md)
-* 📄 [readme-index-content.go](./readme-index-content.go)
+* 📄 [links-readmes.go](./links-readmes.go)
 <!-- INDEX_END -->
 
 ---
