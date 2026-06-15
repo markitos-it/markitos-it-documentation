@@ -18,6 +18,7 @@ Here you won't find quick "copy and paste" scripts without context; each entry i
   * 📁 **snippets/**
     * 📄 [bashrc-git-sets.md](./bash/snippets/bashrc-git-sets.md)
     * 📄 [install-github-ssh-key.md](./bash/snippets/install-github-ssh-key.md)
+    * 📄 [terraform-docs-updater.md](./bash/snippets/terraform-docs-updater.md)
     * 📄 [ubuntu-25-system-cleaner.md](./bash/snippets/ubuntu-25-system-cleaner.md)
 * 📁 **development/**
   * 📁 **go/**
@@ -49,6 +50,7 @@ Here you won't find quick "copy and paste" scripts without context; each entry i
         * 📄 [outputs.tf](./gcp/iac/terraform/002-gke/outputs.tf)
         * 📄 [providers.tf](./gcp/iac/terraform/002-gke/providers.tf)
         * 📄 [variables.tf](./gcp/iac/terraform/002-gke/variables.tf)
+      * 📄 [docs-updater.sh](./gcp/iac/terraform/docs-updater.sh)
   * 📁 **security/**
     * 📁 **snippets/**
       * 📄 [create-secret-for-pull-github-from-gcp.md](./gcp/security/snippets/create-secret-for-pull-github-from-gcp.md)
@@ -58,6 +60,7 @@ Here you won't find quick "copy and paste" scripts without context; each entry i
   * 📁 **snippets/**
     * 📄 [kubernetes-multidatabases.md](./kubernetes/snippets/kubernetes-multidatabases.md)
     * 📄 [microk8s-external-secrets-create.md](./kubernetes/snippets/microk8s-external-secrets-create.md)
+* 📄 [readme-index-content.go](./readme-index-content.go)
 <!-- INDEX_END -->
 
 ---
