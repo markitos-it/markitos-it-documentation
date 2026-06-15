@@ -49,7 +49,12 @@ func main() {
 
 		linkPath := filepath.ToSlash(rel)
 		if info.IsDir() {
-			indexLines = append(indexLines, fmt.Sprintf("%s* <details><summary>📁 **%s/**</summary>", indent, name))
+			// Desplegamos por defecto el primer nivel de directorios
+			openState := ""
+			if depth == 0 {
+				openState = " open"
+			}
+			indexLines = append(indexLines, fmt.Sprintf("%s* <details%s><summary>📁 **%s/**</summary>", indent, openState, name))
 			indexLines = append(indexLines, "")
 			openTags = append(openTags, depth)
 		} else {

@@ -26,7 +26,7 @@ La documentación cubre de manera transversal el ecosistema moderno de infraestr
 <!-- INDEX_START -->
 * 📄 [LICENSE](./LICENSE)
 * 📄 [Makefile](./Makefile)
-* <details><summary>📁 **bash/**</summary>
+* <details open><summary>📁 **bash/**</summary>
 
   * <details><summary>📁 **howtos/**</summary>
 
@@ -42,7 +42,7 @@ La documentación cubre de manera transversal el ecosistema moderno de infraestr
     </details>
 
   </details>
-* <details><summary>📁 **development/**</summary>
+* <details open><summary>📁 **development/**</summary>
 
   * <details><summary>📁 **go/**</summary>
 
@@ -58,57 +58,13 @@ La documentación cubre de manera transversal el ecosistema moderno de infraestr
         * 📄 [terraform-docs-updater.md](./development/iac/terraform/snippets/terraform-docs-updater.md)
 
         </details>
-      * <details><summary>📁 **templates/**</summary>
-
-        * <details><summary>📁 **000-backend/**</summary>
-
-          * 📄 [Makefile](./development/iac/terraform/templates/000-backend/Makefile)
-          * 📄 [backend.tf](./development/iac/terraform/templates/000-backend/backend.tf)
-          * 📄 [main.tf](./development/iac/terraform/templates/000-backend/main.tf)
-          * 📄 [outputs.tf](./development/iac/terraform/templates/000-backend/outputs.tf)
-          * 📄 [providers.tf](./development/iac/terraform/templates/000-backend/providers.tf)
-          * 📄 [variables.tf](./development/iac/terraform/templates/000-backend/variables.tf)
-
-          </details>
-        * <details><summary>📁 **001-vpc/**</summary>
-
-          * 📄 [Makefile](./development/iac/terraform/templates/001-vpc/Makefile)
-          * 📄 [backend.tf](./development/iac/terraform/templates/001-vpc/backend.tf)
-          * 📄 [main.tf](./development/iac/terraform/templates/001-vpc/main.tf)
-          * 📄 [outputs.tf](./development/iac/terraform/templates/001-vpc/outputs.tf)
-          * 📄 [providers.tf](./development/iac/terraform/templates/001-vpc/providers.tf)
-          * 📄 [variables.tf](./development/iac/terraform/templates/001-vpc/variables.tf)
-
-          </details>
-        * <details><summary>📁 **002-gke/**</summary>
-
-          * 📄 [Makefile](./development/iac/terraform/templates/002-gke/Makefile)
-          * 📄 [backend.tf](./development/iac/terraform/templates/002-gke/backend.tf)
-          * 📄 [main.tf](./development/iac/terraform/templates/002-gke/main.tf)
-          * 📄 [outputs.tf](./development/iac/terraform/templates/002-gke/outputs.tf)
-          * 📄 [providers.tf](./development/iac/terraform/templates/002-gke/providers.tf)
-          * 📄 [variables.tf](./development/iac/terraform/templates/002-gke/variables.tf)
-
-          </details>
-        * 📄 [docs-updater.sh](./development/iac/terraform/templates/docs-updater.sh)
-        * <details><summary>📁 **template/**</summary>
-
-          * 📄 [Makefile](./development/iac/terraform/templates/template/Makefile)
-          * 📄 [main.tf](./development/iac/terraform/templates/template/main.tf)
-          * 📄 [outputs.tf](./development/iac/terraform/templates/template/outputs.tf)
-          * 📄 [providers.tf](./development/iac/terraform/templates/template/providers.tf)
-          * 📄 [variables.tf](./development/iac/terraform/templates/template/variables.tf)
-
-          </details>
-
-        </details>
 
       </details>
 
     </details>
 
   </details>
-* <details><summary>📁 **docker/**</summary>
+* <details open><summary>📁 **docker/**</summary>
 
   * <details><summary>📁 **snippets/**</summary>
 
@@ -117,7 +73,7 @@ La documentación cubre de manera transversal el ecosistema moderno de infraestr
     </details>
 
   </details>
-* <details><summary>📁 **gcp/**</summary>
+* <details open><summary>📁 **gcp/**</summary>
 
   * <details><summary>📁 **cloudbuild/**</summary>
 
@@ -315,7 +271,7 @@ La documentación cubre de manera transversal el ecosistema moderno de infraestr
     </details>
 
   </details>
-* <details><summary>📁 **github/**</summary>
+* <details open><summary>📁 **github/**</summary>
 
   * <details><summary>📁 **actions/**</summary>
 
@@ -339,7 +295,7 @@ La documentación cubre de manera transversal el ecosistema moderno de infraestr
     </details>
 
   </details>
-* <details><summary>📁 **kubernetes/**</summary>
+* <details open><summary>📁 **kubernetes/**</summary>
 
   * <details><summary>📁 **microk8s/**</summary>
 
