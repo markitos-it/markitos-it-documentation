@@ -29,7 +29,11 @@ La documentación cubre de manera transversal el ecosistema moderno de infraestr
     * 📄 [localhost-development-boostrap.md](./bash/howtos/localhost-development-boostrap.md)
   * 📁 **snippets/**
     * 📄 [bashrc-git-sets.md](./bash/snippets/bashrc-git-sets.md)
+    * 📄 [install-github-ssh-key.md](./bash/snippets/install-github-ssh-key.md)
     * 📄 [ubuntu-25-system-cleaner.md](./bash/snippets/ubuntu-25-system-cleaner.md)
+* 📁 **development/**
+  * 📁 **go/**
+    * 📄 [install-grpc-tools.md](./development/go/install-grpc-tools.md)
 * 📁 **docker/**
   * 📁 **snippets/**
     * 📄 [docker-exec-multidatabases.md](./docker/snippets/docker-exec-multidatabases.md)
