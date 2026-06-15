@@ -297,6 +297,7 @@ La documentación cubre de manera transversal el ecosistema moderno de infraestr
   </details>
 * <details open><summary>📁 **kubernetes/**</summary>
 
+  * 📄 [kubeadm-ha.md](./kubernetes/kubeadm-ha.md)
   * <details><summary>📁 **microk8s/**</summary>
 
     * 📄 [external-secrets.md](./kubernetes/microk8s/external-secrets.md)
