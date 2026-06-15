@@ -1,23 +1,16 @@
-name: CI/CD Pipeline
+name: secrets-security
+
 
 on:
   push:
-    branches: [main]
-    tags: ["v*.*.*"]
+    branches: [ "main", "master" ]
+    tags: [ "v*" ]
   pull_request:
-    branches: [main]
+    branches: [ "main", "master" ]
 
 jobs:
-  call-security-and-publish:
-    name: Execute Golden Service Pipeline
-    permissions:
-      contents: read
-      id-token: write
-    
+  trigger-golden-pipeline:
     uses: markitos-it/markitos-it-project-goldens/.github/workflows/service-pipeline-secrets.yaml@main
-    
-    with:
-      GO_VERSION: "1.26.3"
-
     secrets:
+      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       GH_PAT_FOR_PRIVATE_REPOS: ${{ secrets.GH_PAT_FOR_PRIVATE_REPOS }}
