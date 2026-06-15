@@ -13,18 +13,20 @@ Here you won't find quick "copy and paste" scripts without context; each entry i
 <!-- INDEX_START -->
 * 📄 [LICENSE](./LICENSE)
 * 📄 [Makefile](./Makefile)
-* 📁 **appsec/**
 * 📁 **bash/**
   * 📁 **howtos/**
     * 📄 [localhost-development-boostrap.md](./bash/howtos/localhost-development-boostrap.md)
   * 📁 **snippets/**
     * 📄 [bashrc-git-sets.md](./bash/snippets/bashrc-git-sets.md)
     * 📄 [install-github-ssh-key.md](./bash/snippets/install-github-ssh-key.md)
-    * 📄 [terraform-docs-updater.md](./bash/snippets/terraform-docs-updater.md)
     * 📄 [ubuntu-25-system-cleaner.md](./bash/snippets/ubuntu-25-system-cleaner.md)
 * 📁 **development/**
   * 📁 **go/**
     * 📄 [install-grpc-tools.md](./development/go/install-grpc-tools.md)
+  * 📁 **iac/**
+    * 📁 **terraform/**
+      * 📁 **snippets/**
+        * 📄 [terraform-docs-updater.md](./development/iac/terraform/snippets/terraform-docs-updater.md)
 * 📁 **docker/**
   * 📁 **snippets/**
     * 📄 [docker-exec-multidatabases.md](./docker/snippets/docker-exec-multidatabases.md)
