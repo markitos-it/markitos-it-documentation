@@ -50,7 +50,7 @@ fi
 
 > **Nota para el Artesano:** Una vez añadido a tu archivo, recuerda ejecutar `source ~/.bashrc` (o `source ~/.zshrc`) para que los cambios surtan efecto en tu terminal actual.
 
-```bash
+```markdown
 #:[.'.]:>- ===================================================================================
 #:[.'.]:>- Marco Antonio - markitos devsecops kulture
 #:[.'.]:>- The Way of the Artisan

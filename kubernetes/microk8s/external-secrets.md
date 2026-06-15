@@ -229,5 +229,16 @@ microk8s kubectl get secret k8s-gmail-secret -n markitos-it -o yaml
 4. **Verificar que las réplicas del portafolio devoran el entorno:**
 ```bash
 microk8s kubectl get pods -n markitos-it -l app=markitos-it-app-personal-portfolio
+```
 
+
+```markdown
+#:[.'.]:>- ===================================================================================
+#:[.'.]:>- Marco Antonio - markitos devsecops kulture
+#:[.'.]:>- The Way of the Artisan
+#:[.'.]:>- markitos.es.info@gmail.com
+#:[.'.]:>- 🌍 https://github.com/orgs/markitos-it/repositories
+#:[.'.]:>- 🌍 https://github.com/orgs/markitos-public/repositories
+#:[.'.]:>- 📺 https://www.youtube.com/@markitos_devsecops
+#:[.'.]:>- ===================================================================================
 ```

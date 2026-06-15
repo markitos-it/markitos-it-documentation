@@ -72,7 +72,8 @@ El último comando realiza una acción sutil pero vital: cambia el flag de conex
 * **Seguridad por Aislamiento**: Cada microservicio nace con privilegios restringidos exclusivamente a su entorno. Si un servicio se ve comprometido, el atacante no tendrá visibilidad ni acceso al resto de las bases de datos que cohabitan en el mismo clúster.
 * **Velocidad de Despliegue**: Pasar de cero a cinco entornos de almacenamiento completamente funcionales y aislados dentro de Kubernetes toma apenas unos segundos, de forma remota y segura.
 
-```bash
+
+```markdown
 #:[.'.]:>- ===================================================================================
 #:[.'.]:>- Marco Antonio - markitos devsecops kulture
 #:[.'.]:>- The Way of the Artisan
@@ -81,5 +82,4 @@ El último comando realiza una acción sutil pero vital: cambia el flag de conex
 #:[.'.]:>- 🌍 https://github.com/orgs/markitos-public/repositories
 #:[.'.]:>- 📺 https://www.youtube.com/@markitos_devsecops
 #:[.'.]:>- ===================================================================================
-
 ```

@@ -9,7 +9,8 @@ microk8s kubectl exec -it vault-0 -n vault -- /bin/sh
     GMAIL_USERNAME="tu-correo@gmail.com" \
     GMAIL_APP_PASSWORD="abcd-efgh-ijkl-mnop"
 
-```bash
+
+```markdown
 #:[.'.]:>- ===================================================================================
 #:[.'.]:>- Marco Antonio - markitos devsecops kulture
 #:[.'.]:>- The Way of the Artisan

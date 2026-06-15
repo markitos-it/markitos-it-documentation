@@ -62,7 +62,7 @@ El último comando realiza una acción sutil pero vital: cambia el flag de conex
 * **Seguridad por Aislamiento**: Cada microservicio nace con privilegios restringidos exclusivamente a su entorno. Si un servicio se ve comprometido, el atacante no tendrá visibilidad ni acceso al resto de las bases de datos del sistema.
 * **Velocidad de Despliegue**: Pasar de cero a cinco entornos de almacenamiento completamente funcionales toma menos de tres segundos.
 
-```bash
+```markdown
 #:[.'.]:>- ===================================================================================
 #:[.'.]:>- Marco Antonio - markitos devsecops kulture
 #:[.'.]:>- The Way of the Artisan
