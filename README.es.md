@@ -72,6 +72,9 @@ La documentación cubre de manera transversal el ecosistema moderno de infraestr
       * 📄 [providers.tf](./gcp/terraform/002-gke/providers.tf)
       * 📄 [variables.tf](./gcp/terraform/002-gke/variables.tf)
     * 📄 [docs-updater.sh](./gcp/terraform/docs-updater.sh)
+* 📁 **github/**
+  * 📁 **actions/**
+    * 📄 [main.md](./github/actions/main.md)
 * 📁 **kubernetes/**
   * 📁 **microk8s/**
     * 📄 [external-secrets.md](./kubernetes/microk8s/external-secrets.md)
