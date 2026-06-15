@@ -1,6 +1,6 @@
 # 🏛️ The Artisan's Knowledge Base
 
-*Verlo en [Español](README.es.md).*
+*Read this in [Spanish](README.es.md).*
 
 Welcome to my public centralized documentation repository. This space serves as a technical logbook, a compendium of knowledge, and a single source of truth where I organize guides, solutions to real-world problems, and architectural flows under the philosophy of **The Way of the Artisan**.
 
@@ -8,21 +8,10 @@ Here you won't find quick "copy and paste" scripts without context; each entry i
 
 ---
 
-## 🛠️ Main Topics
-
-The documentation transversally covers the modern infrastructure and development ecosystem:
-
-* **Cloud Native & Kubernetes:** MicroK8s, Pod design patterns, operators (ESO), Service Mesh, and RBAC.
-* **DevSecOps & SRE:** Secrets management (Vault), code/secrets auditing (Snyk, Gitleaks), CI/CD, and automation.
-* **Infrastructure as Code (IaC):** Standardized Terraform modules and modular logic.
-* **Backend & Architecture:** Artisanal logic in Go (Golang), microservices with gRPC, and service optimization.
-* **Linux & Home Lab:** Management of local environments (Intel NUC, tmux, k9s, internal networks) and system tuning.
-
----
-
-## 📂 Table of Contents
+## 📂 Índice de Contenidos
 
 <!-- INDEX_START -->
+* 📄 [LICENSE](./LICENSE)
 * 📁 **bash/**
   * 📁 **howtos/**
     * 📄 [localhost-development-boostrap.md](./bash/howtos/localhost-development-boostrap.md)
@@ -40,6 +29,30 @@ The documentation transversally covers the modern infrastructure and development
   * 📁 **security/**
     * 📁 **snippets/**
       * 📄 [create-secret-for-pull-github-from-gcp.md](./gcp/security/snippets/create-secret-for-pull-github-from-gcp.md)
+* 📁 **iac/**
+  * 📁 **terraform/**
+    * 📁 **gcp/**
+      * 📁 **000-backend/**
+        * 📄 [Makefile](./iac/terraform/gcp/000-backend/Makefile)
+        * 📄 [backend.tf](./iac/terraform/gcp/000-backend/backend.tf)
+        * 📄 [main.tf](./iac/terraform/gcp/000-backend/main.tf)
+        * 📄 [outputs.tf](./iac/terraform/gcp/000-backend/outputs.tf)
+        * 📄 [providers.tf](./iac/terraform/gcp/000-backend/providers.tf)
+        * 📄 [variables.tf](./iac/terraform/gcp/000-backend/variables.tf)
+      * 📁 **001-vpc/**
+        * 📄 [Makefile](./iac/terraform/gcp/001-vpc/Makefile)
+        * 📄 [backend.tf](./iac/terraform/gcp/001-vpc/backend.tf)
+        * 📄 [main.tf](./iac/terraform/gcp/001-vpc/main.tf)
+        * 📄 [outputs.tf](./iac/terraform/gcp/001-vpc/outputs.tf)
+        * 📄 [providers.tf](./iac/terraform/gcp/001-vpc/providers.tf)
+        * 📄 [variables.tf](./iac/terraform/gcp/001-vpc/variables.tf)
+      * 📁 **002-gke/**
+        * 📄 [Makefile](./iac/terraform/gcp/002-gke/Makefile)
+        * 📄 [backend.tf](./iac/terraform/gcp/002-gke/backend.tf)
+        * 📄 [main.tf](./iac/terraform/gcp/002-gke/main.tf)
+        * 📄 [outputs.tf](./iac/terraform/gcp/002-gke/outputs.tf)
+        * 📄 [providers.tf](./iac/terraform/gcp/002-gke/providers.tf)
+        * 📄 [variables.tf](./iac/terraform/gcp/002-gke/variables.tf)
 * 📁 **kubernetes/**
   * 📁 **microk8s/**
     * 📄 [external-secrets.md](./kubernetes/microk8s/external-secrets.md)
@@ -50,6 +63,18 @@ The documentation transversally covers the modern infrastructure and development
 
 ---
 
+## 🛠️ Main Topics
+
+The documentation transversally covers the modern infrastructure and development ecosystem:
+
+* **Cloud Native & Kubernetes:** MicroK8s, Pod design patterns, operators (ESO), Service Mesh, and RBAC.
+* **DevSecOps & SRE:** Secrets management (Vault), code/secrets auditing (Snyk, Gitleaks), CI/CD, and automation.
+* **Infrastructure as Code (IaC):** Standardized Terraform modules and modular logic.
+* **Backend & Architecture:** Artisanal logic in Go (Golang), microservices with gRPC, and service optimization.
+* **Linux & Home Lab:** Management of local environments (Intel NUC, tmux, k9s, internal networks) and system tuning.
+
+---
+
 ## 🤝 Contributions and Feedback
 
 This repository is open and public. If you find a typo, an outdated command, or believe a flow can be optimized to be more artisanal, feel free to open an **Issue** or submit a **Pull Request**. The DevSecOps culture is based on shared continuous improvement.
@@ -57,7 +82,7 @@ This repository is open and public. If you find a typo, an outdated command, or 
 ---
 
 
-```bash
+```markdown
 #:[.'.]:>- ===================================================================================
 #:[.'.]:>- Marco Antonio - markitos devsecops kulture
 #:[.'.]:>- The Way of the Artisan

@@ -67,7 +67,7 @@ Para poner en marcha esta automatización en un entorno operativo, se deben expo
 # Configurar las variables del entorno operativo
 export SERVICE_ACCOUNT_EMAIL="my-app-sa@my-gcp-project.iam.gserviceaccount.com"
 export SECRET_NAME="github-integration-token"
-export GITHUB_TOKEN="ghp_SecretTokenGeneradoEnGithubAsociadoAlServicio"
+export GITHUB_TOKEN=""
 
 # Asignar permisos y ejecutar el proceso
 chmod +x secret_for_github.sh
