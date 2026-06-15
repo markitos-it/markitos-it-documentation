@@ -1,16 +1,52 @@
-name: secrets-security
-
+name: 🛡️ DevSecOps Security Pipelines
 
 on:
   push:
-    branches: [ "main", "master" ]
-    tags: [ "v*" ]
+    branches: [ "main", "master", "develop" ]
   pull_request:
-    branches: [ "main", "master" ]
+    branches: [ "main", "master", "develop" ]
 
 jobs:
-  trigger-golden-pipeline:
-    uses: markitos-it/markitos-it-project-goldens/.github/workflows/service-pipeline-secrets.yaml@main
-    secrets:
-      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-      GH_PAT_FOR_PRIVATE_REPOS: ${{ secrets.GH_PAT_FOR_PRIVATE_REPOS }}
+  gitleaks-audit:
+    name: 🔍 Code & History Leak Auditing
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 🛠️ Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🔒 Gitleaks Delta & History Scan
+        run: |
+          # 1. Initialize the Markdown Summary Header
+          echo "### 🛡️ DevSecOps Security Audit Summary" > workflow_summary.md
+          echo "Processing static analysis over the Git Delta for this event..." >> workflow_summary.md
+          echo "" >> workflow_summary.md
+          echo "| Component | Status | Scan Technical Details |" >> workflow_summary.md
+          echo "| :--- | :---: | :--- |" >> workflow_summary.md
+
+          # 2. Calculate commit deltas based on the event type
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            LOG_OPTS="${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}"
+          elif [ -n "${{ github.event.before }}" ] && [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]; then
+            LOG_OPTS="${{ github.event.before }}..${{ github.event.after }}"
+          else
+            LOG_OPTS="--max-count=1"
+          fi
+
+          echo "Running Gitleaks with log-opts: $LOG_OPTS"
+          
+          # 3. Execute the Gitleaks Docker container
+          if docker run --rm -v "${{ github.workspace }}:/repo" zricethezav/gitleaks:latest detect --source="/repo" --log-opts="$LOG_OPTS" --redact --verbose; then
+            echo "| Secret Scanning (Gitleaks) | ✅ PASSED | No hardcoded credentials or tokens detected in the new commits. |" >> workflow_summary.md
+            echo "" >> workflow_summary.md
+            echo "> **Result**: Clean code compliance. Adheres to *The Way of the Artisan* standards." >> workflow_summary.md
+            cat workflow_summary.md >> $GITHUB_STEP_SUMMARY
+          else
+            echo "| Secret Scanning (Gitleaks) | ❌ FAILED | Security leak detected! High-risk credentials found in commit history. |" >> workflow_summary.md
+            echo "" >> workflow_summary.md
+            echo "> ⚠️ **Action Required**: Review the extended action logs to locate the exposed file/commit and revoke the compromised token immediately." >> workflow_summary.md
+            cat workflow_summary.md >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
