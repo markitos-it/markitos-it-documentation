@@ -44,33 +44,32 @@ La documentación cubre de manera transversal el ecosistema moderno de infraestr
 * 📁 **gcp/**
   * 📁 **cloudbuild/**
     * 📄 [security-pipeline.md](./gcp/cloudbuild/security-pipeline.md)
-  * 📁 **iac/**
-    * 📁 **terraform/**
-      * 📁 **000-backend/**
-        * 📄 [Makefile](./gcp/iac/terraform/000-backend/Makefile)
-        * 📄 [backend.tf](./gcp/iac/terraform/000-backend/backend.tf)
-        * 📄 [main.tf](./gcp/iac/terraform/000-backend/main.tf)
-        * 📄 [outputs.tf](./gcp/iac/terraform/000-backend/outputs.tf)
-        * 📄 [providers.tf](./gcp/iac/terraform/000-backend/providers.tf)
-        * 📄 [variables.tf](./gcp/iac/terraform/000-backend/variables.tf)
-      * 📁 **001-vpc/**
-        * 📄 [Makefile](./gcp/iac/terraform/001-vpc/Makefile)
-        * 📄 [backend.tf](./gcp/iac/terraform/001-vpc/backend.tf)
-        * 📄 [main.tf](./gcp/iac/terraform/001-vpc/main.tf)
-        * 📄 [outputs.tf](./gcp/iac/terraform/001-vpc/outputs.tf)
-        * 📄 [providers.tf](./gcp/iac/terraform/001-vpc/providers.tf)
-        * 📄 [variables.tf](./gcp/iac/terraform/001-vpc/variables.tf)
-      * 📁 **002-gke/**
-        * 📄 [Makefile](./gcp/iac/terraform/002-gke/Makefile)
-        * 📄 [backend.tf](./gcp/iac/terraform/002-gke/backend.tf)
-        * 📄 [main.tf](./gcp/iac/terraform/002-gke/main.tf)
-        * 📄 [outputs.tf](./gcp/iac/terraform/002-gke/outputs.tf)
-        * 📄 [providers.tf](./gcp/iac/terraform/002-gke/providers.tf)
-        * 📄 [variables.tf](./gcp/iac/terraform/002-gke/variables.tf)
-      * 📄 [docs-updater.sh](./gcp/iac/terraform/docs-updater.sh)
   * 📁 **security/**
     * 📁 **snippets/**
       * 📄 [create-secret-for-pull-github-from-gcp.md](./gcp/security/snippets/create-secret-for-pull-github-from-gcp.md)
+  * 📁 **terraform/**
+    * 📁 **000-backend/**
+      * 📄 [Makefile](./gcp/terraform/000-backend/Makefile)
+      * 📄 [backend.tf](./gcp/terraform/000-backend/backend.tf)
+      * 📄 [main.tf](./gcp/terraform/000-backend/main.tf)
+      * 📄 [outputs.tf](./gcp/terraform/000-backend/outputs.tf)
+      * 📄 [providers.tf](./gcp/terraform/000-backend/providers.tf)
+      * 📄 [variables.tf](./gcp/terraform/000-backend/variables.tf)
+    * 📁 **001-vpc/**
+      * 📄 [Makefile](./gcp/terraform/001-vpc/Makefile)
+      * 📄 [backend.tf](./gcp/terraform/001-vpc/backend.tf)
+      * 📄 [main.tf](./gcp/terraform/001-vpc/main.tf)
+      * 📄 [outputs.tf](./gcp/terraform/001-vpc/outputs.tf)
+      * 📄 [providers.tf](./gcp/terraform/001-vpc/providers.tf)
+      * 📄 [variables.tf](./gcp/terraform/001-vpc/variables.tf)
+    * 📁 **002-gke/**
+      * 📄 [Makefile](./gcp/terraform/002-gke/Makefile)
+      * 📄 [backend.tf](./gcp/terraform/002-gke/backend.tf)
+      * 📄 [main.tf](./gcp/terraform/002-gke/main.tf)
+      * 📄 [outputs.tf](./gcp/terraform/002-gke/outputs.tf)
+      * 📄 [providers.tf](./gcp/terraform/002-gke/providers.tf)
+      * 📄 [variables.tf](./gcp/terraform/002-gke/variables.tf)
+    * 📄 [docs-updater.sh](./gcp/terraform/docs-updater.sh)
 * 📁 **kubernetes/**
   * 📁 **microk8s/**
     * 📄 [external-secrets.md](./kubernetes/microk8s/external-secrets.md)
