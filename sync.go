@@ -38,7 +38,11 @@ func main() {
 		indent := strings.Repeat("  ", depth)
 
 		linkPath := filepath.ToSlash(rel)
-		indexLines = append(indexLines, fmt.Sprintf("%s* [%s](./%s)", indent, name, linkPath))
+		if info.IsDir() {
+			indexLines = append(indexLines, fmt.Sprintf("%s* 📁 **%s/**", indent, name))
+		} else {
+			indexLines = append(indexLines, fmt.Sprintf("%s* 📄 [%s](./%s)", indent, name, linkPath))
+		}
 
 		return nil
 	})

@@ -23,25 +23,25 @@ The documentation transversally covers the modern infrastructure and development
 ## 📂 Table of Contents
 
 <!-- INDEX_START -->
-* [bash](./bash)
-  * [howtos](./bash/howtos)
-    * [localhost-development-boostrap.md](./bash/howtos/localhost-development-boostrap.md)
-  * [snippets](./bash/snippets)
-    * [bashrc-git-sets.md](./bash/snippets/bashrc-git-sets.md)
-    * [ubuntu-25-system-cleaner.md](./bash/snippets/ubuntu-25-system-cleaner.md)
-* [docker](./docker)
-  * [snippets](./docker/snippets)
-    * [docker-exec-multidatabases.md](./docker/snippets/docker-exec-multidatabases.md)
-* [gcp](./gcp)
-  * [security](./gcp/security)
-    * [snippets](./gcp/security/snippets)
-      * [create-secret-for-pull-github-from-gcp.md](./gcp/security/snippets/create-secret-for-pull-github-from-gcp.md)
-* [kubernetes](./kubernetes)
-  * [microk8s](./kubernetes/microk8s)
-    * [external-secrets.md](./kubernetes/microk8s/external-secrets.md)
-  * [snippets](./kubernetes/snippets)
-    * [kubernetes-multidatabases.md](./kubernetes/snippets/kubernetes-multidatabases.md)
-    * [microk8s-external-secrets-create.md](./kubernetes/snippets/microk8s-external-secrets-create.md)
+* 📁 **bash/**
+  * 📁 **howtos/**
+    * 📄 [localhost-development-boostrap.md](./bash/howtos/localhost-development-boostrap.md)
+  * 📁 **snippets/**
+    * 📄 [bashrc-git-sets.md](./bash/snippets/bashrc-git-sets.md)
+    * 📄 [ubuntu-25-system-cleaner.md](./bash/snippets/ubuntu-25-system-cleaner.md)
+* 📁 **docker/**
+  * 📁 **snippets/**
+    * 📄 [docker-exec-multidatabases.md](./docker/snippets/docker-exec-multidatabases.md)
+* 📁 **gcp/**
+  * 📁 **security/**
+    * 📁 **snippets/**
+      * 📄 [create-secret-for-pull-github-from-gcp.md](./gcp/security/snippets/create-secret-for-pull-github-from-gcp.md)
+* 📁 **kubernetes/**
+  * 📁 **microk8s/**
+    * 📄 [external-secrets.md](./kubernetes/microk8s/external-secrets.md)
+  * 📁 **snippets/**
+    * 📄 [kubernetes-multidatabases.md](./kubernetes/snippets/kubernetes-multidatabases.md)
+    * 📄 [microk8s-external-secrets-create.md](./kubernetes/snippets/microk8s-external-secrets-create.md)
 <!-- INDEX_END -->
 
 ---
