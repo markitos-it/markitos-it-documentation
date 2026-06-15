@@ -61,7 +61,13 @@ Here you won't find quick "copy and paste" scripts without context; each entry i
     * 📄 [docs-updater.sh](./gcp/terraform/docs-updater.sh)
 * 📁 **github/**
   * 📁 **actions/**
-    * 📄 [main.md](./github/actions/main.md)
+    * 📁 **action/**
+      * 📁 **hello-go-action/**
+        * 📄 [action.go](./github/actions/action/hello-go-action/action.go)
+        * 📄 [action.yaml](./github/actions/action/hello-go-action/action.yaml)
+        * 📄 [hello-workflow.yaml](./github/actions/action/hello-go-action/hello-workflow.yaml)
+    * 📁 **workflows/**
+      * 📄 [makefile-docker-postgres-appsec.md](./github/actions/workflows/makefile-docker-postgres-appsec.md)
 * 📁 **kubernetes/**
   * 📁 **microk8s/**
     * 📄 [external-secrets.md](./kubernetes/microk8s/external-secrets.md)

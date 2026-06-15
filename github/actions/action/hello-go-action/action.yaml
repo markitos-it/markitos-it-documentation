@@ -1,0 +1,16 @@
+name: 'Hola Go Action'
+description: 'Ejecuta un programa en Go'
+
+inputs:
+  nombre:
+    description: 'Nombre a saludar'
+    required: false
+    default: 'Markitos'
+
+runs:
+  using: "composite"
+  steps:
+    - name: Ejecutar programa Go
+      shell: bash
+      run: |
+        go run "$GITHUB_ACTION_PATH/action.go" "${{ inputs.nombre }}"
