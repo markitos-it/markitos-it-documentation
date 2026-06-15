@@ -1,56 +1,67 @@
-# 🏗️ Infrastructure as Code: Terraform Modules
+# 🚀 Terraform GCP Stacks - Boilerplate Multi-Project
 
-Welcome to the IaC (Infrastructure as Code) directory. This space contains standardized, reusable, and secure Terraform modules designed under **The Way of the Artisan** philosophy. 
-
-These modules are not just configuration files; they are robust architectural pieces built with DevSecOps principles, ensuring immutability, least privilege, and deterministic deployments.
+Bienvenido a este repositorio que reúne varios stacks independientes de infraestructura en Google Cloud Platform (GCP) usando Terraform. Cada subproyecto está documentado y listo para usarse de forma modular, siguiendo el "Camino del Artesano" y las mejores prácticas DevSecOps.
 
 ---
 
-## 🧩 Module Structure
+## 📚 Índice de Stacks
 
-Each module in this directory follows a strict structural standard to ensure maintainability and clarity:
+Cada stack es autónomo y tiene su propio README con instrucciones detalladas. Puedes navegar a cada uno para ver ejemplos, variables, outputs y recomendaciones específicas.
 
-* `main.tf`: The core logic and resource definitions.
-* `variables.tf`: Explicitly typed input variables with descriptions and validation rules.
-* `outputs.tf`: Defined outputs for cross-module data sharing.
-* `providers.tf`: Provider constraints, required versions, and remote state configurations.
-
----
-
-## 🚀 Design Philosophy
-
-1. **Immutability First:** Infrastructure should be replaced, not patched. Manual interventions (ClickOps) are strictly avoided.
-2. **Secure by Default:** Secrets are never hardcoded. We integrate with Vault / Secret Managers for dynamic credential injection.
-3. **State Management:** State files are strictly stored in encrypted remote backends with state locking enabled to prevent race conditions in CI/CD pipelines.
-
-### Example Module Invocation
-
-```hcl
-module "artisanal_infrastructure" {
-  source = "./modules/core-infrastructure"
-
-  environment = "production"
-  project_id  = var.gcp_project_id
-  region      = "europe-southwest1"
-}
-```
+| Stack | Descripción | Enlace |
+|-------|-------------|--------|
+| **001-welcome** | Boilerplate base para iniciar proyectos Terraform en GCP. Incluye buenas prácticas, naming, validaciones y tags estandarizados. | [Ver README](./001-welcome/README.md) |
+| **002-gcp-bucket** | Ejemplo de despliegue de un bucket de almacenamiento en GCP. Ideal para aprender sobre recursos de storage. | [Ver README](./002-gcp-bucket/README.md) |
+| **003-gcp-vpc** | Stack para crear una VPC en GCP, con Makefile para automatizar tareas y variables configurables. | [Ver README](./003-gcp-vpc/README.md) |
+| **004-gke-standar-private-nodes-public-endpoint** | Despliega un clúster GKE con nodos privados y endpoint público, incluyendo red, roles y cuentas de servicio. | [Ver README](./004-gke-standar-private-nodes-public-endpoint/README.md) |
+| **005-gke-standar-private-nodes-private-endpoint-bastion-access** | Stack avanzado para GKE privado con acceso seguro vía bastión, redes privadas y protección de recursos. | [Ver README](./005-gke-standar-private-nodes-private-endpoint-bastion-access/README.md) |
 
 ---
 
-## 🛠️ Prerequisites
+## 🛠️ Requisitos Generales
 
-* **Terraform** >= 1.5.0 (Managed locally via `tfenv`).
-* Authenticated Cloud Provider CLI (e.g., `gcloud`) with appropriate IAM roles to perform the plan and apply stages.
+- Terraform >= 1.12.0
+- Cuenta y credenciales de GCP (Service Account con permisos adecuados)
+- Google Cloud SDK (opcional para pruebas locales)
+- Make instalado para automatización (opcional)
 
 ---
 
-```bash
-#:[.'.]:>- ===================================================================================
-#:[.'.]:>- Marco Antonio - markitos devsecops kulture
-#:[.'.]:>- The Way of the Artisan
-#:[.'.]:>- markitos.es.info@gmail.com
-#:[.'.]:>- 🌍 https://github.com/orgs/markitos-it/repositories
-#:[.'.]:>- 🌍 https://github.com/orgs/markitos-public/repositories
-#:[.'.]:>- 📺 https://www.youtube.com/@markitos_devsecops
-#:[.'.]:>- ===================================================================================
-```
+## 🧩 Filosofía y Buenas Prácticas
+
+- **Simplicidad y modularidad:** Cada stack es independiente y puede usarse por separado.
+- **Naming semántico y tags estandarizados:** Facilita la gestión y el monitoreo.
+- **Validaciones robustas:** Prevención de errores comunes antes del despliegue.
+- **Seguridad:** Gitignore completo, credenciales protegidas, state files ignorados.
+- **Documentación clara:** Cada stack tiene ejemplos, variables y outputs explicados.
+
+---
+
+## 🚦 ¿Cómo empezar?
+
+1. Elige el stack que necesitas y revisa su README.
+2. Configura tus credenciales y variables según las instrucciones.
+3. Usa los comandos del Makefile para inicializar, planificar y aplicar la infraestructura.
+4. Consulta los outputs y verifica los recursos creados en GCP.
+
+---
+
+## 🤝 Autoría y Comunidad
+
+Creado por **Marco Antonio (markitos)**  
+DevSecOps Kulture  
+El Camino del Artesano
+
+---
+
+## 📄 Licencia
+
+Uso interno y educativo.  
+Puedes adaptar los stacks según tus necesidades y contribuir mejoras siguiendo la filosofía del proyecto.
+
+---
+
+¿Listo para construir infraestructura como código en GCP?  
+> *"La simplicidad es la máxima sofisticación"* — Leonardo da Vinci
+
+---

@@ -10,6 +10,7 @@ import (
 func main() {
 	root := "."
 	var indexLines []string
+	var openTags []int
 
 	err := filepath.Walk(root, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
@@ -25,7 +26,7 @@ func main() {
 			return nil
 		}
 
-		if name == "sync.go" || name == "README.md" || name == "README.es.md" {
+		if name == "sync.go" || name == "links-readmes.go" || name == "README.md" || name == "README.es.md" {
 			return nil
 		}
 
@@ -37,9 +38,20 @@ func main() {
 		depth := len(strings.Split(rel, string(os.PathSeparator))) - 1
 		indent := strings.Repeat("  ", depth)
 
+		// Close tags if we move to a shallower or equal depth
+		for len(openTags) > 0 && openTags[len(openTags)-1] >= depth {
+			lastDepth := openTags[len(openTags)-1]
+			closeIndent := strings.Repeat("  ", lastDepth)
+			indexLines = append(indexLines, "")
+			indexLines = append(indexLines, fmt.Sprintf("%s  </details>", closeIndent))
+			openTags = openTags[:len(openTags)-1]
+		}
+
 		linkPath := filepath.ToSlash(rel)
 		if info.IsDir() {
-			indexLines = append(indexLines, fmt.Sprintf("%s* 📁 **%s/**", indent, name))
+			indexLines = append(indexLines, fmt.Sprintf("%s* <details><summary>📁 **%s/**</summary>", indent, name))
+			indexLines = append(indexLines, "")
+			openTags = append(openTags, depth)
 		} else {
 			indexLines = append(indexLines, fmt.Sprintf("%s* 📄 [%s](./%s)", indent, name, linkPath))
 		}
@@ -50,6 +62,14 @@ func main() {
 	if err != nil {
 		fmt.Printf("Error recorriendo el directorio: %v\n", err)
 		return
+	}
+
+	// Close any remaining tags
+	for i := len(openTags) - 1; i >= 0; i-- {
+		lastDepth := openTags[i]
+		closeIndent := strings.Repeat("  ", lastDepth)
+		indexLines = append(indexLines, "")
+		indexLines = append(indexLines, fmt.Sprintf("%s  </details>", closeIndent))
 	}
 
 	indexContent := strings.Join(indexLines, "\n")

@@ -1,32 +1,11 @@
-# Terraform-specific ignores
-.terraform/
-terraform.tfstate
-terraform.tfstate.backup
-*.tfvars
-*.tfplan
-.terraform.lock.hcl
-
-# Provider-specific (ej. GCP, AWS, etc.)
-# Si usas GCP, agrega:
-*.json  # Para claves de servicio JSON, si no las manejas con variables
-# Si usas AWS:
-# *.pem
-# .aws/
-
-# Logs and temporary files
-*.log
-*.tmp
-
-# IDE and editor files (si no están en raíz)
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS-specific
-.DS_Store
-Thumbs.db
-
-# Custom overrides (agrega lo que necesites)
-# Ejemplo: si tienes outputs sensibles, ignóralos
-# outputs.tfvars
+000-nogit
+000-assets/key.json
+000-assets/credentials
+key.json
+credentials
+**/key.json
+**/credentials
+*-nogit
+*.json
+**/*.json
+.nogit

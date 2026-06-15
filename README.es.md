@@ -26,68 +26,334 @@ La documentación cubre de manera transversal el ecosistema moderno de infraestr
 <!-- INDEX_START -->
 * 📄 [LICENSE](./LICENSE)
 * 📄 [Makefile](./Makefile)
-* 📁 **bash/**
-  * 📁 **howtos/**
+* <details><summary>📁 **bash/**</summary>
+
+  * <details><summary>📁 **howtos/**</summary>
+
     * 📄 [localhost-development-boostrap.md](./bash/howtos/localhost-development-boostrap.md)
-  * 📁 **snippets/**
+
+    </details>
+  * <details><summary>📁 **snippets/**</summary>
+
     * 📄 [bashrc-git-sets.md](./bash/snippets/bashrc-git-sets.md)
     * 📄 [install-github-ssh-key.md](./bash/snippets/install-github-ssh-key.md)
     * 📄 [ubuntu-25-system-cleaner.md](./bash/snippets/ubuntu-25-system-cleaner.md)
-* 📁 **development/**
-  * 📁 **go/**
+
+    </details>
+
+  </details>
+* <details><summary>📁 **development/**</summary>
+
+  * <details><summary>📁 **go/**</summary>
+
     * 📄 [install-grpc-tools.md](./development/go/install-grpc-tools.md)
-  * 📁 **iac/**
-    * 📁 **terraform/**
-      * 📁 **snippets/**
+
+    </details>
+  * <details><summary>📁 **iac/**</summary>
+
+    * <details><summary>📁 **terraform/**</summary>
+
+      * <details><summary>📁 **snippets/**</summary>
+
         * 📄 [terraform-docs-updater.md](./development/iac/terraform/snippets/terraform-docs-updater.md)
-* 📁 **docker/**
-  * 📁 **snippets/**
+
+        </details>
+      * <details><summary>📁 **templates/**</summary>
+
+        * <details><summary>📁 **000-backend/**</summary>
+
+          * 📄 [Makefile](./development/iac/terraform/templates/000-backend/Makefile)
+          * 📄 [backend.tf](./development/iac/terraform/templates/000-backend/backend.tf)
+          * 📄 [main.tf](./development/iac/terraform/templates/000-backend/main.tf)
+          * 📄 [outputs.tf](./development/iac/terraform/templates/000-backend/outputs.tf)
+          * 📄 [providers.tf](./development/iac/terraform/templates/000-backend/providers.tf)
+          * 📄 [variables.tf](./development/iac/terraform/templates/000-backend/variables.tf)
+
+          </details>
+        * <details><summary>📁 **001-vpc/**</summary>
+
+          * 📄 [Makefile](./development/iac/terraform/templates/001-vpc/Makefile)
+          * 📄 [backend.tf](./development/iac/terraform/templates/001-vpc/backend.tf)
+          * 📄 [main.tf](./development/iac/terraform/templates/001-vpc/main.tf)
+          * 📄 [outputs.tf](./development/iac/terraform/templates/001-vpc/outputs.tf)
+          * 📄 [providers.tf](./development/iac/terraform/templates/001-vpc/providers.tf)
+          * 📄 [variables.tf](./development/iac/terraform/templates/001-vpc/variables.tf)
+
+          </details>
+        * <details><summary>📁 **002-gke/**</summary>
+
+          * 📄 [Makefile](./development/iac/terraform/templates/002-gke/Makefile)
+          * 📄 [backend.tf](./development/iac/terraform/templates/002-gke/backend.tf)
+          * 📄 [main.tf](./development/iac/terraform/templates/002-gke/main.tf)
+          * 📄 [outputs.tf](./development/iac/terraform/templates/002-gke/outputs.tf)
+          * 📄 [providers.tf](./development/iac/terraform/templates/002-gke/providers.tf)
+          * 📄 [variables.tf](./development/iac/terraform/templates/002-gke/variables.tf)
+
+          </details>
+        * 📄 [docs-updater.sh](./development/iac/terraform/templates/docs-updater.sh)
+        * <details><summary>📁 **template/**</summary>
+
+          * 📄 [Makefile](./development/iac/terraform/templates/template/Makefile)
+          * 📄 [main.tf](./development/iac/terraform/templates/template/main.tf)
+          * 📄 [outputs.tf](./development/iac/terraform/templates/template/outputs.tf)
+          * 📄 [providers.tf](./development/iac/terraform/templates/template/providers.tf)
+          * 📄 [variables.tf](./development/iac/terraform/templates/template/variables.tf)
+
+          </details>
+
+        </details>
+
+      </details>
+
+    </details>
+
+  </details>
+* <details><summary>📁 **docker/**</summary>
+
+  * <details><summary>📁 **snippets/**</summary>
+
     * 📄 [docker-exec-multidatabases.md](./docker/snippets/docker-exec-multidatabases.md)
-* 📁 **gcp/**
-  * 📁 **cloudbuild/**
+
+    </details>
+
+  </details>
+* <details><summary>📁 **gcp/**</summary>
+
+  * <details><summary>📁 **cloudbuild/**</summary>
+
+    * 📄 [hello-go.md](./gcp/cloudbuild/hello-go.md)
     * 📄 [security-pipeline.md](./gcp/cloudbuild/security-pipeline.md)
-  * 📁 **security/**
-    * 📁 **snippets/**
+
+    </details>
+  * <details><summary>📁 **security/**</summary>
+
+    * <details><summary>📁 **snippets/**</summary>
+
       * 📄 [create-secret-for-pull-github-from-gcp.md](./gcp/security/snippets/create-secret-for-pull-github-from-gcp.md)
-  * 📁 **terraform/**
-    * 📁 **000-backend/**
-      * 📄 [Makefile](./gcp/terraform/000-backend/Makefile)
-      * 📄 [backend.tf](./gcp/terraform/000-backend/backend.tf)
-      * 📄 [main.tf](./gcp/terraform/000-backend/main.tf)
-      * 📄 [outputs.tf](./gcp/terraform/000-backend/outputs.tf)
-      * 📄 [providers.tf](./gcp/terraform/000-backend/providers.tf)
-      * 📄 [variables.tf](./gcp/terraform/000-backend/variables.tf)
-    * 📁 **001-vpc/**
-      * 📄 [Makefile](./gcp/terraform/001-vpc/Makefile)
-      * 📄 [backend.tf](./gcp/terraform/001-vpc/backend.tf)
-      * 📄 [main.tf](./gcp/terraform/001-vpc/main.tf)
-      * 📄 [outputs.tf](./gcp/terraform/001-vpc/outputs.tf)
-      * 📄 [providers.tf](./gcp/terraform/001-vpc/providers.tf)
-      * 📄 [variables.tf](./gcp/terraform/001-vpc/variables.tf)
-    * 📁 **002-gke/**
-      * 📄 [Makefile](./gcp/terraform/002-gke/Makefile)
-      * 📄 [backend.tf](./gcp/terraform/002-gke/backend.tf)
-      * 📄 [main.tf](./gcp/terraform/002-gke/main.tf)
-      * 📄 [outputs.tf](./gcp/terraform/002-gke/outputs.tf)
-      * 📄 [providers.tf](./gcp/terraform/002-gke/providers.tf)
-      * 📄 [variables.tf](./gcp/terraform/002-gke/variables.tf)
-    * 📄 [docs-updater.sh](./gcp/terraform/docs-updater.sh)
-* 📁 **github/**
-  * 📁 **actions/**
-    * 📁 **action/**
-      * 📁 **hello-go-action/**
+
+      </details>
+
+    </details>
+  * <details><summary>📁 **terraform/**</summary>
+
+    * <details><summary>📁 **000-assets/**</summary>
+
+      * 📄 [make-module.sh](./gcp/terraform/000-assets/make-module.sh)
+
+      </details>
+    * <details><summary>📁 **001-welcome/**</summary>
+
+      * 📄 [Makefile](./gcp/terraform/001-welcome/Makefile)
+      * 📄 [main.tf](./gcp/terraform/001-welcome/main.tf)
+      * 📄 [outputs.tf](./gcp/terraform/001-welcome/outputs.tf)
+      * 📄 [providers.tf](./gcp/terraform/001-welcome/providers.tf)
+      * 📄 [variables.tf](./gcp/terraform/001-welcome/variables.tf)
+
+      </details>
+    * <details><summary>📁 **002-gcp-bucket/**</summary>
+
+      * 📄 [Makefile](./gcp/terraform/002-gcp-bucket/Makefile)
+      * 📄 [bucket.tf](./gcp/terraform/002-gcp-bucket/bucket.tf)
+      * 📄 [helpers.tf](./gcp/terraform/002-gcp-bucket/helpers.tf)
+      * 📄 [outputs.tf](./gcp/terraform/002-gcp-bucket/outputs.tf)
+      * 📄 [providers.tf](./gcp/terraform/002-gcp-bucket/providers.tf)
+      * 📄 [variables.tf](./gcp/terraform/002-gcp-bucket/variables.tf)
+
+      </details>
+    * <details><summary>📁 **003-gcp-vpc/**</summary>
+
+      * 📄 [Makefile](./gcp/terraform/003-gcp-vpc/Makefile)
+      * 📄 [main.tf](./gcp/terraform/003-gcp-vpc/main.tf)
+      * 📄 [outputs.tf](./gcp/terraform/003-gcp-vpc/outputs.tf)
+      * 📄 [providers.tf](./gcp/terraform/003-gcp-vpc/providers.tf)
+      * 📄 [variables.tf](./gcp/terraform/003-gcp-vpc/variables.tf)
+
+      </details>
+    * <details><summary>📁 **004-gke-standar-private-nodes-public-endpoint/**</summary>
+
+      * 📄 [Makefile](./gcp/terraform/004-gke-standar-private-nodes-public-endpoint/Makefile)
+      * 📄 [datas.tf](./gcp/terraform/004-gke-standar-private-nodes-public-endpoint/datas.tf)
+      * 📄 [gke.tf](./gcp/terraform/004-gke-standar-private-nodes-public-endpoint/gke.tf)
+      * 📄 [locals.tf](./gcp/terraform/004-gke-standar-private-nodes-public-endpoint/locals.tf)
+      * 📄 [network.tf](./gcp/terraform/004-gke-standar-private-nodes-public-endpoint/network.tf)
+      * 📄 [outputs.tf](./gcp/terraform/004-gke-standar-private-nodes-public-endpoint/outputs.tf)
+      * 📄 [variables.tf](./gcp/terraform/004-gke-standar-private-nodes-public-endpoint/variables.tf)
+      * 📄 [versions.tf](./gcp/terraform/004-gke-standar-private-nodes-public-endpoint/versions.tf)
+
+      </details>
+    * <details><summary>📁 **005-gke-standar-private-nodes-private-endpoint-bastion-access/**</summary>
+
+      * 📄 [Makefile](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/Makefile)
+      * 📄 [backend.tf](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/backend.tf)
+      * 📄 [bastion.tf](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/bastion.tf)
+      * 📄 [datas.tf](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/datas.tf)
+      * 📄 [firewall.tf](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/firewall.tf)
+      * <details><summary>📁 **gcloud-role-permissions-sa/**</summary>
+
+        * 📄 [terraform-custom-role-permissions.list](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/gcloud-role-permissions-sa/terraform-custom-role-permissions.list)
+        * 📄 [terraform-custom-role-permissions.sh](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/gcloud-role-permissions-sa/terraform-custom-role-permissions.sh)
+
+        </details>
+      * 📄 [gke.tf](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/gke.tf)
+      * <details><summary>📁 **k8s-app-demo/**</summary>
+
+        * 📄 [Makefile](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/k8s-app-demo/Makefile)
+        * <details><summary>📁 **backend/**</summary>
+
+          * 📄 [Dockerfile](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/k8s-app-demo/backend/Dockerfile)
+          * <details><summary>📁 **cmd/**</summary>
+
+            * 📄 [main.go](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/k8s-app-demo/backend/cmd/main.go)
+
+            </details>
+          * 📄 [go.mod](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/k8s-app-demo/backend/go.mod)
+          * 📄 [go.sum](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/k8s-app-demo/backend/go.sum)
+
+          </details>
+        * 📄 [docker-compose.yaml](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/k8s-app-demo/docker-compose.yaml)
+        * <details><summary>📁 **frontend/**</summary>
+
+          * 📄 [Dockerfile](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/k8s-app-demo/frontend/Dockerfile)
+          * <details><summary>📁 **cmd/**</summary>
+
+            * 📄 [main.go](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/k8s-app-demo/frontend/cmd/main.go)
+
+            </details>
+          * 📄 [go.mod](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/k8s-app-demo/frontend/go.mod)
+
+          </details>
+        * <details><summary>📁 **manifests/**</summary>
+
+          * 📄 [backend-deployment.yaml](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/k8s-app-demo/manifests/backend-deployment.yaml)
+          * 📄 [frontend-deployment.yaml](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/k8s-app-demo/manifests/frontend-deployment.yaml)
+          * 📄 [postgres-deployment.yaml](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/k8s-app-demo/manifests/postgres-deployment.yaml)
+
+          </details>
+
+        </details>
+      * 📄 [locals.tf](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/locals.tf)
+      * 📄 [main.tf](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/main.tf)
+      * 📄 [nat-router.tf](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/nat-router.tf)
+      * 📄 [network.tf](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/network.tf)
+      * 📄 [outputs.tf](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/outputs.tf)
+      * 📄 [variables.tf](./gcp/terraform/005-gke-standar-private-nodes-private-endpoint-bastion-access/variables.tf)
+
+      </details>
+    * <details><summary>📁 **006-gke-autopilot-public-endpoint/**</summary>
+
+      * 📄 [Makefile](./gcp/terraform/006-gke-autopilot-public-endpoint/Makefile)
+      * 📄 [backend.tf](./gcp/terraform/006-gke-autopilot-public-endpoint/backend.tf)
+      * <details><summary>📁 **bin/**</summary>
+
+        * <details><summary>📁 **makefile/**</summary>
+
+          * <details><summary>📁 **gcloud/**</summary>
+
+            * 📄 [install.sh](./gcp/terraform/006-gke-autopilot-public-endpoint/bin/makefile/gcloud/install.sh)
+
+            </details>
+          * <details><summary>📁 **iam-sa/**</summary>
+
+            * 📄 [terraform-custom-role-permissions.list](./gcp/terraform/006-gke-autopilot-public-endpoint/bin/makefile/iam-sa/terraform-custom-role-permissions.list)
+            * 📄 [terraform-custom-role-permissions.sh](./gcp/terraform/006-gke-autopilot-public-endpoint/bin/makefile/iam-sa/terraform-custom-role-permissions.sh)
+
+            </details>
+
+          </details>
+
+        </details>
+      * 📄 [datas.tf](./gcp/terraform/006-gke-autopilot-public-endpoint/datas.tf)
+      * 📄 [gke.tf](./gcp/terraform/006-gke-autopilot-public-endpoint/gke.tf)
+      * 📄 [iam.tf](./gcp/terraform/006-gke-autopilot-public-endpoint/iam.tf)
+      * <details><summary>📁 **k8s-app-demo/**</summary>
+
+        * 📄 [Makefile](./gcp/terraform/006-gke-autopilot-public-endpoint/k8s-app-demo/Makefile)
+        * <details><summary>📁 **backend/**</summary>
+
+          * 📄 [Dockerfile](./gcp/terraform/006-gke-autopilot-public-endpoint/k8s-app-demo/backend/Dockerfile)
+          * <details><summary>📁 **cmd/**</summary>
+
+            * 📄 [main.go](./gcp/terraform/006-gke-autopilot-public-endpoint/k8s-app-demo/backend/cmd/main.go)
+
+            </details>
+          * 📄 [go.mod](./gcp/terraform/006-gke-autopilot-public-endpoint/k8s-app-demo/backend/go.mod)
+          * 📄 [go.sum](./gcp/terraform/006-gke-autopilot-public-endpoint/k8s-app-demo/backend/go.sum)
+
+          </details>
+        * 📄 [docker-compose.yaml](./gcp/terraform/006-gke-autopilot-public-endpoint/k8s-app-demo/docker-compose.yaml)
+        * <details><summary>📁 **frontend/**</summary>
+
+          * 📄 [Dockerfile](./gcp/terraform/006-gke-autopilot-public-endpoint/k8s-app-demo/frontend/Dockerfile)
+          * <details><summary>📁 **cmd/**</summary>
+
+            * 📄 [main.go](./gcp/terraform/006-gke-autopilot-public-endpoint/k8s-app-demo/frontend/cmd/main.go)
+
+            </details>
+          * 📄 [go.mod](./gcp/terraform/006-gke-autopilot-public-endpoint/k8s-app-demo/frontend/go.mod)
+
+          </details>
+        * <details><summary>📁 **manifests/**</summary>
+
+          * 📄 [backend-deployment.yaml](./gcp/terraform/006-gke-autopilot-public-endpoint/k8s-app-demo/manifests/backend-deployment.yaml)
+          * 📄 [frontend-deployment.yaml](./gcp/terraform/006-gke-autopilot-public-endpoint/k8s-app-demo/manifests/frontend-deployment.yaml)
+          * 📄 [postgres-deployment.yaml](./gcp/terraform/006-gke-autopilot-public-endpoint/k8s-app-demo/manifests/postgres-deployment.yaml)
+
+          </details>
+
+        </details>
+      * 📄 [locals.tf](./gcp/terraform/006-gke-autopilot-public-endpoint/locals.tf)
+      * 📄 [nat-router.tf](./gcp/terraform/006-gke-autopilot-public-endpoint/nat-router.tf)
+      * 📄 [network.tf](./gcp/terraform/006-gke-autopilot-public-endpoint/network.tf)
+      * 📄 [outputs.tf](./gcp/terraform/006-gke-autopilot-public-endpoint/outputs.tf)
+      * 📄 [providers.tf](./gcp/terraform/006-gke-autopilot-public-endpoint/providers.tf)
+      * 📄 [variables.tf](./gcp/terraform/006-gke-autopilot-public-endpoint/variables.tf)
+      * 📄 [versions.tf](./gcp/terraform/006-gke-autopilot-public-endpoint/versions.tf)
+
+      </details>
+    * 📄 [LICENSE](./gcp/terraform/LICENSE)
+
+    </details>
+
+  </details>
+* <details><summary>📁 **github/**</summary>
+
+  * <details><summary>📁 **actions/**</summary>
+
+    * <details><summary>📁 **action/**</summary>
+
+      * <details><summary>📁 **hello-go-action/**</summary>
+
         * 📄 [action.go](./github/actions/action/hello-go-action/action.go)
         * 📄 [action.yaml](./github/actions/action/hello-go-action/action.yaml)
         * 📄 [hello-workflow.yaml](./github/actions/action/hello-go-action/hello-workflow.yaml)
-    * 📁 **workflows/**
+
+        </details>
+
+      </details>
+    * <details><summary>📁 **workflows/**</summary>
+
       * 📄 [makefile-docker-postgres-appsec.md](./github/actions/workflows/makefile-docker-postgres-appsec.md)
-* 📁 **kubernetes/**
-  * 📁 **microk8s/**
+
+      </details>
+
+    </details>
+
+  </details>
+* <details><summary>📁 **kubernetes/**</summary>
+
+  * <details><summary>📁 **microk8s/**</summary>
+
     * 📄 [external-secrets.md](./kubernetes/microk8s/external-secrets.md)
-  * 📁 **snippets/**
+
+    </details>
+  * <details><summary>📁 **snippets/**</summary>
+
     * 📄 [kubernetes-multidatabases.md](./kubernetes/snippets/kubernetes-multidatabases.md)
     * 📄 [microk8s-external-secrets-create.md](./kubernetes/snippets/microk8s-external-secrets-create.md)
-* 📄 [links-readmes.go](./links-readmes.go)
+
+    </details>
+
+  </details>
 <!-- INDEX_END -->
 
 ---

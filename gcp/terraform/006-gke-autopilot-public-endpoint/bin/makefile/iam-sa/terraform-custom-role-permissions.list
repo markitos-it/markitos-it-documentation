@@ -1,0 +1,63 @@
+# Network and Compute Permissions
+compute.networks.create
+compute.networks.delete
+compute.networks.get
+compute.networks.updatePolicy
+compute.subnetworks.create
+compute.subnetworks.delete
+compute.subnetworks.get
+compute.subnetworks.use
+compute.subnetworks.setIamPolicy
+compute.zones.list
+compute.instanceGroupManagers.get
+compute.instanceGroupManagers.list
+compute.instanceGroups.get
+compute.instanceGroups.list
+
+# Firewall Permissions
+compute.firewalls.create
+compute.firewalls.delete
+compute.firewalls.get
+
+# Cloud Router & NAT Permissions
+compute.routers.create
+compute.routers.delete
+compute.routers.get
+compute.routers.list
+compute.routers.update
+
+# GKE Permissions
+container.clusters.create
+container.clusters.delete
+container.clusters.get
+container.clusters.list
+container.clusters.update
+container.operations.get
+container.operations.list
+
+# Service Account Permissions (IAM)
+iam.serviceAccounts.create
+iam.serviceAccounts.delete
+iam.serviceAccounts.get
+iam.serviceAccounts.list
+iam.serviceAccounts.update
+iam.serviceAccounts.getIamPolicy
+iam.serviceAccounts.setIamPolicy
+iam.serviceAccountKeys.create
+iam.serviceAccountKeys.delete
+
+# Key permission for Terraform's SA to act as other SAs (e.g., GKE node SAs)
+iam.serviceAccounts.actAs
+
+# Storage Permissions (for Terraform backend)
+storage.buckets.create
+storage.buckets.get
+storage.objects.create
+storage.objects.delete
+storage.objects.get
+storage.objects.list
+
+# Permission to manage project-level IAM policies (required for google_project_iam_member)
+resourcemanager.projects.getIamPolicy
+resourcemanager.projects.setIamPolicy
+resourcemanager.projects.get
