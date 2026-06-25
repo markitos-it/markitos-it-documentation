@@ -44,6 +44,11 @@ La documentación cubre de manera transversal el ecosistema moderno de infraestr
   </details>
 * <details open><summary>📁 **development/**</summary>
 
+  * <details><summary>📁 **architecture/**</summary>
+
+    * 📄 [events.md](./development/architecture/events.md)
+
+    </details>
   * <details><summary>📁 **go/**</summary>
 
     * 📄 [install-grpc-tools.md](./development/go/install-grpc-tools.md)

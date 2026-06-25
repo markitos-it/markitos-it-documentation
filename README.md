@@ -31,6 +31,11 @@ Here you won't find quick "copy and paste" scripts without context; each entry i
   </details>
 * <details open><summary>📁 **development/**</summary>
 
+  * <details><summary>📁 **architecture/**</summary>
+
+    * 📄 [events.md](./development/architecture/events.md)
+
+    </details>
   * <details><summary>📁 **go/**</summary>
 
     * 📄 [install-grpc-tools.md](./development/go/install-grpc-tools.md)
