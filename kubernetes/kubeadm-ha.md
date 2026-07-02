@@ -388,6 +388,13 @@ echo "--------------------------------------------------------"
 kubectl get pods -n nginx-gateway
 kubectl get svc -A | grep -E "ingress-nginx-controller|nginx-gateway"
 ```
+Cambio de puertos de nginx
+```bash
+kubectl patch svc ingress-nginx-controller -n ingress-nginx --type='json' -p='[
+  {"op": "replace", "path": "/spec/ports/0/nodePort", "value": 30080},
+  {"op": "replace", "path": "/spec/ports/1/nodePort", "value": 30443}
+]'
+```
 
 # comandos utiles
 ```bash
@@ -486,3 +493,4 @@ Y podrás hacer la prueba de fuego:
 # Debería responder con el 200 OK y mostrar los datos del certificado
 curl -kI https://192.168.1.122/test
 ```
+
